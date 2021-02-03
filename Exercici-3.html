@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noms i numeros</title>
+</head>
+
+<body>
+    <h2>Noms i numeros</h2>
+    <button onclick="mostraNom()">Mostra consola</button>
+    <script>
+
+        // Sin modificaciones. Subida a nueva rama Dev en Git.
+
+        function mostraNom() {
+            const text = {};
+            let nom = "AMALINALLI";
+            let nomSeparat = nom.split('');
+
+            // Guardo nomSeparat en map 
+            let nomPerLletres = nomSeparat.map(function (Lletra) {
+                // si el text tiene la propiedad Lletra, sumar +1, si no, es que aparece solo una vez
+                if (text.hasOwnProperty(Lletra)) {
+                    text[Lletra] += 1;
+                } else {
+                    text[Lletra] = 1;
+                }
+            });
+
+            console.log(text);
+        }
+    </script>
+</body>
+
+</html>

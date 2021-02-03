@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nom i cognom</title>
+</head>
+
+<body>
+    <h2>Nom i cognom</h2>
+    <button onclick="mostraNom()">Mostra consola</button>
+    <script>
+
+        // Sin modificaciones. Subida a nueva rama Dev en Git.
+
+        function mostraNom() {
+
+            let miNombre = "Miguel";
+            letrasNombre = miNombre.split('');
+
+            let miApellido = "Alarcia";
+            letrasApellido = miApellido.split('');
+
+            let espai = [" "];
+
+            let nomApellido = letrasNombre.concat(espai).concat(letrasApellido);
+
+            console.log(nomApellido);
+        }
+    </script>
+</body>
+
+</html>
