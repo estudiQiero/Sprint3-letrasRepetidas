@@ -12,17 +12,24 @@
     <button onclick="mostraNom()">Mostra consola</button>
     <script>
 
-
         function mostraNom() {
-            let nom = ["A", "L", "E", "J", "A", "N", "D", "R", "O"];
-            let text = "";
+            let nom = "Alejandro";
 
-            for ( i = 0; i < nom.length ; i++ ) {
-                text += nom[i] + "\n";
+            for (const letras of nom) {
+                console.log(letras.toUpperCase());
             }
-
-            console.log(text);
         }
+
+        // function mostraNom() {
+        //     let nom = ["A", "L", "E", "J", "A", "N", "D", "R", "O"];
+        //     let text = "";
+
+        //     for ( i = 0; i < nom.length ; i++ ) {
+        //         text += nom[i] + "\n";
+        //     }
+
+        //     console.log(text);
+        // }
 
     </script>
 </body>
