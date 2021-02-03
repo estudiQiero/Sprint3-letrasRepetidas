@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocals i consonants</title>
+</head>
+
+<body>
+    <h2>Arrai del teu nom</h2>
+    <button onclick="mostraNom()">Mostra consola</button>
+    <script>
+
+        function mostraNom(texto) {
+            let nom = "AMA3LIN2ALLI";
+            let nom2 = nom.split('');
+            let text = "";
+
+            // Intenté hacer un bucle dentro de otro bucle de un array de vocales, pero no conseguí el mismo resultado. Sé que es muy primitiva esta forma, pero era la única que me funcionaba.
+            for (i = 0; i < nom2.length; i++) {
+                if (nom2[i] == "A" || nom2[i] == "E" || nom2[i] == "I" || nom2[i] == "O" || nom2[i] == "U") {
+                    text += "He trobat la VOCAL " + nom2[i] + "\n";
+                }
+                
+                // Intentaba hacer algo parecido a else If (nom2[i] == Number)... o .isInteger... pero no funcionaba.
+                else if (nom2[i] == 1 || nom2[i] == 2 || nom2[i] == 3 || nom2[i] == 4 || nom2[i] == 5 || nom2[i] == 6 || nom2[i] == 7 || nom2[i] == 8 || nom2[i] == 9 || nom2[i] == 0 ) {
+                    text += "Els noms de persones no contenen el número " + nom2[i] + "\n";
+                } else {
+                    text += "He trobat la CONSONANT " + nom2[i] + "\n";
+                }
+            }
+
+            console.log(text);
+        }
+    </script>
+</body>
+
+</html>
